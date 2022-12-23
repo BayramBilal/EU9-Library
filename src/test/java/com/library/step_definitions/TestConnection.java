@@ -9,7 +9,7 @@ public class TestConnection {
     @Test
     public void Test() throws SQLException {
 
-        String query = "select name, isbn,year,author,description from books\n" +
+        String query = "select name, isbn, year, author, description from books\n" +
                 "where name = 'Chordeiles minor'";
         Connection connection =
                 DriverManager.getConnection("jdbc:mysql://34.230.35.214:3306/library1","library1_client","WVF4NdGXCKHeE6VQ");
